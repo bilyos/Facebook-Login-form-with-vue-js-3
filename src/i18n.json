@@ -1,0 +1,38 @@
+{
+  "en": {
+    "login": "Login",
+    "forgotPassword": "Forgot password?",
+    "createNewAccount": "Create account",
+    "emailLabel": "Email or phone number",
+    "passwordLabel": "Password",
+    "ForgotHeaderText": "Enter your email address to reset your password.",
+    "GreetMessage": " Connect with friends and the world around you on Facebook.",
+    "sendResetLink": "send  link",
+    "required": "This field cannot be empty",
+    "requiredPassword": "the password cannot be empty",
+    "requiredEmail": "Email is required",
+    "invalidEmail": "Invalid email format",
+    "passwordLength": "Password must be at least 6 characters",
+    "passwordSymbol": "Password must contain a symbol",
+    "unknownUser": "User not recognized",
+    "errorMessage": "Incorrect email or password"
+  },
+  "fr": {
+    "login": "Connexion",
+    "forgotPassword": "Mot de passe oublié ?",
+    "createNewAccount": "Creer un compte",
+    "emailLabel": "Email ou numéro de téléphone",
+    "sendResetLink": "Envoyer le lien ",
+    "ForgotHeaderText": "Saisissez votre adresse électronique pour réinitialiser votre mot de passe.",
+    "passwordLabel": "Mot de passe",
+    "GreetMessage": "Connectez-vous avec vos amis et le monde qui vous entoure sur Facebook.",
+    "required": "Ce champ ne peut pas être vide",
+    "requiredPassword": "le mot de passe est requis",
+    "requiredEmail": "le mail est requis",
+    "invalidEmail": "Format de l'email invalide",
+    "passwordLength": "Le mot de passe doit contenir au moins 6 caractères",
+    "passwordSymbol": "Le mot de passe doit contenir un symbole",
+    "unknownUser": "Utilisateur non reconnu",
+    "errorMessage": "Email ou mot de passe incorrect"
+  }
+}
