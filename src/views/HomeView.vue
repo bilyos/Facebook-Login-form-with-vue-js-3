@@ -50,11 +50,11 @@
 </template>
 
 <script setup lang="ts">
-import {  onMounted, ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import useVuelidate from '@vuelidate/core'
 import { useRouter } from 'vue-router'
 import { required, email as emailValidator, minLength, helpers } from '@vuelidate/validators'
-import CustomButton from '../components/CustomButton.vue'
+import CustomButton from '../components/BaseButton.vue'
 import CustomInputEmail from '../components/CustomInputEmail.vue'
 import CustomInputPassword from '../components/CustomInputPassword.vue'
 import { useI18n } from 'vue-i18n'
@@ -106,7 +106,6 @@ onMounted(() => {
 const submitForm = async (): Promise<void> => {
   const isValid = await v$.value.$validate()
   if (!isValid) {
-    console.log('Form is not valid')
     return
   }
 
@@ -115,7 +114,6 @@ const submitForm = async (): Promise<void> => {
 
   if (storedUser && form.value.password !== storedUser.password) {
     errorMessage.value = t('errorMessage')
-    console.log('Incorrect email or password')
   } else {
     errorMessage.value = ''
     storedUsers[form.value.email] = {

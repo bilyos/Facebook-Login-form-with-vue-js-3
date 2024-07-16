@@ -2,7 +2,7 @@
 import { mount } from '@vue/test-utils'
 import { describe, it, expect, vi } from 'vitest'
 import HomeView from '@/views/HomeView.vue'
-import CustomButton from '@/components/CustomButton.vue'
+import BaseButton from '@/components/BaseButton.vue'
 import { useRouter } from 'vue-router'
 import i18n from '@/i18n'
 
@@ -35,7 +35,7 @@ describe('HomeView', () => {
         }
       }
     })
-    const button = wrapper.findComponent(CustomButton)
+    const button = wrapper.findComponent(BaseButton)
     await button.trigger('click')
     expect(wrapper.find('.text-red-600').exists()).toBe(false)
   })
@@ -50,7 +50,7 @@ describe('HomeView', () => {
       }
     })
 
-    const button = wrapper.findComponent(CustomButton)
+    const button = wrapper.findComponent(BaseButton)
     await button.trigger('click')
     expect(wrapper.find('.text-red-600').exists()).toBe(false)
   })
@@ -79,7 +79,7 @@ describe('HomeView', () => {
       }
     })
 
-    const button = wrapper.findComponent(CustomButton)
+    const button = wrapper.findComponent(BaseButton)
     await button.trigger('click')
     expect(push).toHaveBeenCalledWith('/welcome')
   })

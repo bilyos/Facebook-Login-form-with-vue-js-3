@@ -27,7 +27,7 @@
 import { ref } from 'vue'
 import useVuelidate from '@vuelidate/core'
 import { required, email as emailValidator, helpers } from '@vuelidate/validators'
-import CustomButton from '../components/CustomButton.vue'
+import CustomButton from '../components/BaseButton.vue'
 import CustomInputEmail from '../components/CustomInputEmail.vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
@@ -55,7 +55,6 @@ const v$ = useVuelidate(rules, form)
 const submitLoginForm = async (): Promise<void> => {
   const isValid = await v$.value.$validate()
   if (!isValid) {
-    console.log('Form is not valid')
     return
   }
   await router.push({ path: '/' })

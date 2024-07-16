@@ -2,10 +2,9 @@
 
 import { mount } from '@vue/test-utils'
 import { describe, it, expect } from 'vitest'
-import CustomButton from '@/components/CustomButton.vue'
+import CustomButton from '@/components/BaseButton.vue'
 
-describe('CustomButton', () => {
-
+describe('BaseButton', () => {
   it('renders the button with the correct label', () => {
     const wrapper = mount(CustomButton, {
       props: {
